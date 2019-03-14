@@ -109,14 +109,26 @@ footer {
 
 /**************************  HEADER STYLES  ***********************************/
 
+header {
+    padding: 15px 0;
+}
+
 header .content-wrapper {
    display: flex;
    justify-content: center;
    align-items: center;
    flex-flow: row wrap;
+   margin: 0;
+}
+
+header .header-divider {
+    width: 100%;
+    border-bottom: solid 1px;
+    margin: 10px 0 20px 0;
 }
 
 header nav {
+   width: 60%;
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -124,11 +136,24 @@ header nav {
 }
 
 header nav ul {
+    width: 100%;
+    padding: 0;
     display: flex;
     justify-content: space-around;
 }
 
+header nav ul li {
+    list-style: none;
+    margin-top: 0;
+    padding-top: 15px;
+}
+
 /***************************  FOOTER STYLES  **********************************/
+
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
 
 footer .social-icons {
     display: flex;
@@ -142,6 +167,17 @@ footer .social-icons p {
     align-items: center;
 }
 
+footer .copyright {
+    margin: 20px 0;
+}
+
+footer {
+    flex-direction: column;
+  }
+  
+  footer p {
+    margin: 0;
+  }
 /***************************  MOBILE STYLES - HOMEPAGE  ***********************/
 
 .hero-area {
@@ -157,10 +193,19 @@ aside {
     flex-flow: row wrap;
 }
 
-.features {
+.features .content-wrapper {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+}
+
+.features article {
+    width: 55%;
+    margin: 30px 0;
+}
+
+.features h2 {
+    margin-bottom: 60px;
 }
 
 .features .features-items {
@@ -175,10 +220,23 @@ aside {
      justify-content: center;
 }
 
+.features p {
+    margin: 0;
+}
+
 .reveiws {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+}
+
+.reviews h2 {
+    margin-bottom: 40px;
+}
+
+.reveiws h3 {
+    width: 55%;
+    margin: 20px 0;
 }
 
 /*******************************  ABOUT PAGE  ********************************/
@@ -197,6 +255,10 @@ aside {
     flex-flow: row wrap;
   }
 
+  .contact-content p{
+      margin: 0;
+  }
+
   /*****************************  FAQ PAGE  *********************************/
 
 .faq {
@@ -211,8 +273,16 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 50px 0 0 0;
   }
 
+  .faq h2 {
+    margin-bottom: 40px;
+  }
+  
+  .faq-content {
+    margin-bottom: 50px;
+  }
 
 /* ==========================================================================
    Helper classes
